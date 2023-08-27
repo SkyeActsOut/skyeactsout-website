@@ -1,11 +1,17 @@
 body {
-    font-family: 'Times New Roman', Times, serif, sans-serif;
-    font-size: 1.125rem;
+    font-family: Verdana;
+    /* font-size: 1.125rem; */
     margin: 0;
     padding: 0;
     letter-spacing: 0.075rem;
     animation: fade-in 0.8s ease-in-out forwards;
+    background-color: rgba(23,24,24,255);
+    color: rgba(254, 253, 255, 255)
 }
+
+.swal2-html-container, .swal2-title{
+    color: white !important;
+  }
 
 a {
 
@@ -20,53 +26,6 @@ hr {
 
 }
 
-.tweet a {
-
-    color: rgb(120, 0, 120);
-
-}
-
-.tweet a:hover {
-
-    color: rgb(170, 0, 170);
-
-}
-
-.kofi-container {
-
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-    padding-bottom: 10px;
-    display: flex;
-    flex: 1;
-
-}
-
-.kofi-container hr {
-
-    flex-grow: 1;
-    width: 30%;
-
-    margin-top: auto;
-
-}
-
-.kofi-container div {
-
-    width: 55%;
-    min-width: 200px;
-
-}
-
-.kofi-container div a {
-
-    width: 85%;
-    animation: expand 0.5s ease-in-out forwards;
-
-
-}
-
 p,
 h2 {
 
@@ -76,9 +35,9 @@ h2 {
 }
 
 .container {
-    max-width: 800px;
+    width: 90%;
     margin: 0 auto;
-    padding-top: 25px;
+    padding-top: 100px;
     padding: 20;
 }
 
@@ -115,14 +74,22 @@ img {
     font-size: 1.125rem;
 }
 
+.profile-container {
+
+    margin: auto;
+    width: fit-content;
+
+}
+
 .profile {
     display: flex;
     align-items: center;
+    padding: 20px;
 }
 
 .profile img {
-    width: 100px;
-    height: 100px;
+    width: 84px;
+    height: 84px;
     border-radius: 50%;
     object-fit: cover;
     margin-right: 20px;
@@ -151,7 +118,7 @@ img {
     border-radius: 8px;
     margin: 10px;
     padding: 12px;
-    width: 6.75rem;
+    width: 8rem;
     transition: all 0.3s ease;
     box-shadow: 1px 1px rgba(0, 0, 0, 0.4);
     letter-spacing: initial;
@@ -160,26 +127,19 @@ img {
 .button:hover {
 
     opacity: 0.9 !important;
-    width: 7rem;
+    width: 8.5rem;
 
 }
 
-.nsfw-button:hover {
-
-    opacity: 0.9 !important;
-    width: 9.25rem;
-
-}
 
 .nsfw-button {
 
     background-color: #5e2032;
-    width: 9rem;
 
 }
 
 .button span {
-    font-size: 1.125rem;
+    font-size: 1rem;
 }
 
 footer {
@@ -190,7 +150,30 @@ footer {
 
 }
 
+@media (max-width: 1150px) {
+
+    .button {
+
+        width: 25%;
+
+    }
+    .button:hover {
+
+        width: 26%;
+
+    }
+
+}
+
 @media (max-width: 768px) {
+
+    .container {
+
+        padding-top: 0;
+        width: 100%;
+
+    }
+
     .buttons-container {
         flex-direction: column;
         align-items: center;
@@ -208,13 +191,26 @@ footer {
 
     }
 
+    .profile-container{
+
+        width: 100%;
+
+    }
+
     .profile {
 
-        margin-left: auto;
-        margin-right: auto;
+        /* margin-left: auto;
+        margin-right: auto; */
         display: block;
         text-align: center;
-        margin: 20px;
+        background-color: rgba(21,22,22,255)
+
+    }
+
+    hr {
+
+        margin: 0;
+        margin-bottom: 20px;
 
     }
 
@@ -223,17 +219,6 @@ footer {
 
         display: none !important;
 
-    }
-
-    .kofi-container div {
-
-        width: 100%;
-
-    }
-
-    .kofi-container div a {
-
-        width: 80%;
     }
 
     .hide {
