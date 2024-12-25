@@ -20,8 +20,15 @@ a {
 
 hr {
 
-    border-top: 1px solid black;
+    border-top: 1px solid #e6cbcb;
     height: 0px;
+
+}
+
+.second {
+
+    width: 90%;
+    opacity: 0.9;
 
 }
 
@@ -87,13 +94,16 @@ img {
     border-radius: 50%;
     object-fit: cover;
     margin-right: 20px;
-    border: 1px solid #ffe5e5;
+    border: 2px solid #ffe5e5;
+    box-shadow: 0px 0px 2px 2px #e15d5d;
 }
 
 .profile h1 {
     margin: 0;
-    font-size: 26px;
+    font-size: 30px;
     font-weight: bold;
+    /* padding: 5px; */
+    /* box-shadow: 1px 1px 2px 2px #e15d5d; */
 }
 
 .buttons-container {
@@ -107,8 +117,9 @@ img {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #fff;
-    background-color: #275A72;
+    color: white;
+    font-weight: 600;
+    background-color: #e15d5d;
     border-radius: 8px;
     margin: 10px;
     padding: 12px;
@@ -116,6 +127,7 @@ img {
     transition: all 0.3s ease;
     box-shadow: 1px 1px rgba(0, 0, 0, 0.4);
     letter-spacing: initial;
+    /* animation: fade-bottom 0.25s ease-in-out; */
 }
 
 .button:hover {
@@ -128,7 +140,8 @@ img {
 
 .nsfw-button {
 
-    background-color: #5e2032;
+    /* background-color: #5e2032; */
+    background-color: #b34545;
 
 }
 
@@ -250,6 +263,12 @@ footer {
         animation: fade-bottom 0.25s ease-in-out forwards;
     
     }
+
+    hr {
+
+        /* animation: expand 0.20s ease-in-out; */
+
+    }
 }
 
 @keyframes fade-in {
@@ -288,20 +307,4 @@ footer {
     100% {
         margin-bottom: 0px;
     }
-}
-
-@keyframes expand {
-
-    0% {
-
-        width: 80%;
-
-    }
-
-    100% {
-
-        width: 85%;
-
-    }
-
 }
